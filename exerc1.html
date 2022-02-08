@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site_de_calculo_de_ingestão_calórica</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Calculo de ingestão calórica</h1>
+    </header>
+<section>    <div id="titulo"> <strong>Para saber o quanto de calórias você precisa ingerir, Preencha abaixo os valores </strong> </div>
+<div>Seu sexo: 
+  <input type="radio" name="radsex" id="masctxt" checked>
+  <label for="masctxt">Masculino</label>
+  <input type="radio" name="radsex" id="femitxt">
+  <label for="femitxt">Femenino</label></div>
+  <p>Observação: preencha os valores sem adcionar ponto ou virgula  </p>
+<p><div>Sua idade: <input type="number" name="idadetxt" id="idadetxt" ></div></p> 
+<p><div>Sua altura: <input type="number" name="alturatxt" id="alturatxt" ></div></p> 
+<p><div>Seu peso : <input type="number" name="pesotxt" id="pesotxt"></div></p>
+<p><div><strong>Entre as três opções de gastos calórico diario abaixo,<br> onde você mais se encaixa?</strong></div></p>
+<div>
+<input type="radio" name="ativtxt" id="leve" checked>
+<label for="leve"><strong>Leve:</strong> Considera atividades como cozinhar, cuidar de crianças; trabalhar 8 horas sentado e caminhadas de até 1 hora por dia.</label>
+<P>
+<input type="radio" name="ativtxt" id="media">
+<label for="media"><strong>Moderada:</strong> Inclui atividades como fazer uma hora diária de exercícios como corrida, ciclismo, natação ou dança, trabalhar como operário de construção,  garçom, vendedor de porta em porta, carteiro o entregador de mercadorias leves.</label></P>
+<p>
+<input type="radio" name="ativtxt" id="alta">
+<label for="alta"><strong>Intensa:</strong> Considera atividades como natação, academia, corrida, andar de bicicleta ou dançar duas horas por dia; trabalhadores rurais não mecanizados (que trabalham com instrumentos manuais e caminham longas distâncias, várias horas por dia) ou entregador de objetos pesados.
+</label>
+</p>
+</div>
+<p>
+  <div><input type="button" value="Calcular"onclick= "calcular()"></div>
+</p>
+<div id="res">
+Calculando calórias.....
+</div>
+<div id="obj">
+
+  </div>
+</section>
+
+  <footer>
+    <p> &copy; By Manoel</p>
+  </footer>  
+  <script src="script.js"></script>
+</body>
+</html>
